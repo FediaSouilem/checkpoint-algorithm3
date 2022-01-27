@@ -1,0 +1,63 @@
+// first version
+var arr = [[6, 1],[6, 0], [5,0], [3,2], [2,8]]
+FUNCTION dot_Product(v1, v2)
+FOR(i=0;i<arr.length-2;i++){
+FOR(j=0;j<arr.length-1;j++){
+    v1=arr[i]
+    v2=arr[j]
+}}
+dot_product (v1,v2)
+ALGORITHM checkpoint3.algo
+VAR
+ps:  ARRAY_OF INTEGER;
+    ps := 0;
+BEGIN
+    for( i = 0; i < v1.length; i++){
+        ps += ps+v1[i] * v2[i]
+      }
+   return ps
+   IF (ps===0)) THEN
+       v1+' and'+v2+' sont orthogonaux.'
+            ELSE
+             v1+' and'+v2+' ne sont pas orthogonaux.'
+
+   END_IF
+
+  result= dot_product(v1,v2)
+  
+END
+
+// second version
+
+
+VAR ps:=0
+PROCEDURE dot_product (v1, v2: INTEGER, VAR ps: ARRAY_OF INTEGER)
+
+FOR(i=0;i<arr.length;i++){
+FOR(j=0;j<arr.length;j++){
+    v1=arr[i]
+    v2=arr[j]
+}}
+dot_product (v1,v2)
+ALGORITHM checkpoint3.algo
+VAR
+    ps:  ARRAY_OF INTEGER;
+BEGIN
+    for( i = 0; i < v1.length; i++){
+        ps += ps+v1[i] * v2[i]
+      }
+   IF (ps===0)) THEN
+       v1+' and'+v2+' sont orthogonaux.'
+            ELSE
+             v1+' and'+v2+' ne sont pas orthogonaux.'
+
+   END_IF
+    result= dot_product(v1,v2)
+END
+
+
+
+
+
+
+
